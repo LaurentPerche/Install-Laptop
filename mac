@@ -196,6 +196,16 @@ fancy_echo "Configuring Bundler ..."
 
 brew_install_or_upgrade 'heroku-toolbelt'
 
+brew_install_or_upgrade 'mtr'
+
+brew_install_or_upgrade 'homebrew/dupes/openssh'
+
+brew_install_or_upgrade 'homebrew/dupes/grep'
+
+brew_install_or_upgrade 'wget --with-iri'
+
+brew_install_or_upgrade 'zsh zsh-completions'
+
 brew_tap 'caskroom/cask'
 
 brew_install_or_upgrade 'brew-cask'
@@ -232,7 +242,7 @@ brew_cask_install 'sublime-text3'
 brew_cask_install 'textexpander'
 brew_cask_install 'vlc'
 
-#End of Brew Cask Installed 
+#End of Brew Cask Installed
 
 if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
@@ -257,11 +267,9 @@ elif [ ! -f "$HOME/.ssh/github_rsa.pub" ]; then
   open ~/Applications/GitHub\ Desktop.app
 fi
 
-#Install Ack
 fancy_echo 'Installing Ack...'
 curl http://beyondgrep.com/ack-2.14-single-file > ~/bin/ack && chmod 0755 !#:3
 
-#Update Apps Config File with mackup
 fancy_echo 'Updating Apps Config with Mackup...'
 mackup backup
 
