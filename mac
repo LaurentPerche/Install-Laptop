@@ -221,7 +221,7 @@ brew_cask_install 'sublime-text3'
 brew_cask_install 'textexpander'
 brew_cask_install 'vlc'
 
-#End of Brew Cask Install
+#End of Brew Cask Installation 
 
 if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
