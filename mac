@@ -267,6 +267,9 @@ fi
 fancy_echo 'Installing Ack...'
 curl http://beyondgrep.com/ack-2.14-single-file > ~/bin/ack && chmod 0755 !#:3
 
+#Install Oh-My-Zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
 #Update Apps Config File with mackup
 fancy_echo 'Updating Apps Config with Mackup...'
 mackup backup
